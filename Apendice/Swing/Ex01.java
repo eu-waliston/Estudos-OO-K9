@@ -9,14 +9,14 @@ public class Ex01 {
 
         JPanel jPanel = new JPanel();
 
-        JLabel rotulo  = new JLabel();
+        JLabel rotulo = new JLabel();
         rotulo.setText("Usuario: ");
         jPanel.add(rotulo);
 
-        JTextField textField  = new JTextField(40);
+        JTextField textField = new JTextField(40);
         jPanel.add(textField);
 
-        JLabel rotulo2  = new JLabel();
+        JLabel rotulo2 = new JLabel();
         rotulo2.setText("Senha: ");
         jPanel.add(rotulo2);
 
@@ -48,6 +48,16 @@ public class Ex01 {
         jPanel.add(checkBox2);
         jPanel.add(checkBox3);
 
-        frame.setSize(800,800);
+
+        String[] items = new String[3];
+        items[0]= "Rafael Cosentino";
+        items[1]= "Jonas Hirata";
+        items[2]= "Marcelo Martins";
+
+        JComboBox comboBox = new JComboBox(items);
+        jPanel.add(comboBox);
+
+
+        frame.setSize(800, 800);
     }
 }
