@@ -9,9 +9,6 @@ public class Ex01 {
 
         JPanel jPanel = new JPanel();
 
-        frame.setSize(300,200);
-
-
         JLabel rotulo  = new JLabel();
         rotulo.setText("Usuario: ");
         jPanel.add(rotulo);
@@ -43,5 +40,14 @@ public class Ex01 {
         jPanel.add(button2);
         jPanel.add(button3);
 
+
+        JCheckBox checkBox1 = new JCheckBox("Rafael Cosentino");
+        JCheckBox checkBox2 = new JCheckBox("Jonas Hirata");
+        JCheckBox checkBox3 = new JCheckBox("Marcelo Martins");
+        jPanel.add(checkBox1);
+        jPanel.add(checkBox2);
+        jPanel.add(checkBox3);
+
+        frame.setSize(800,800);
     }
 }
